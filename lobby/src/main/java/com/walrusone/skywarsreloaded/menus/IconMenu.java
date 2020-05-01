@@ -64,7 +64,7 @@ public class IconMenu {
     }
 
     public void onInventoryClick(InventoryClickEvent event) {
-        if (!event.getInventory().getTitle().equals(name)) {
+        if (!event.getView().getTitle().equals(name)) {
             return;
         }
 

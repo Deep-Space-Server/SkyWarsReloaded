@@ -18,21 +18,21 @@ public class CmdManager implements CommandExecutor {
 	private List<BaseCmd> pcmds = new ArrayList<>();
 
 	public CmdManager() {
-		admincmds.add(new ReloadCmd("sw"));
+		admincmds.add(new ReloadCmd());
 		admincmds.add(new ChestAddCmd("sw"));
 		admincmds.add(new ChestEditCmd("sw"));
-		admincmds.add(new SetStatsCmd("sw"));
-		admincmds.add(new ClearStatsCmd("sw"));
-		admincmds.add(new SetSpawnCmd("sw"));
+		admincmds.add(new SetStatsCmd());
+		admincmds.add(new ClearStatsCmd());
+		admincmds.add(new SetSpawnCmd());
 		admincmds.add(new StartCmd("sw"));
 		admincmds.add(new UpdateTopCmd("sw"));
 		admincmds.add(new HoloAddCmd("sw"));
 		admincmds.add(new HoloRemoveCmd("sw"));
 		
-		pcmds.add(new SWJoinCmd("sw"));
+		pcmds.add(new SWJoinCmd());
 		pcmds.add(new SWQuitCmd("sw"));
-		pcmds.add(new SWStatsCmd("sw"));
-		pcmds.add(new SWTopCmd("sw"));
+		pcmds.add(new SWStatsCmd());
+		pcmds.add(new SWTopCmd());
 		pcmds.add(new SWOptionsCmd("sw"));
 		pcmds.add(new SWSpectateCmd("sw"));
 

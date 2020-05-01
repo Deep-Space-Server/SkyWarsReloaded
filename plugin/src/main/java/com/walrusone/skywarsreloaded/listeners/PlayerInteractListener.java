@@ -130,7 +130,7 @@ public class PlayerInteractListener implements Listener {
     			Player player = a1.getPlayer();
             	if (a1.getAction() == Action.RIGHT_CLICK_BLOCK && (SkyWarsReloaded.getNMS().getMainHandItem(player) == null || SkyWarsReloaded.getNMS().getMainHandItem(player).getType() == Material.AIR)) {
             		Material signPost = SkyWarsReloaded.getNMS().getMaterial("SIGN_POST").getType();
-            		 if (a1.getClickedBlock().getType() == Material.WALL_SIGN || a1.getClickedBlock().getType() == signPost) {
+            		 if (a1.getClickedBlock().getType() == Material.OAK_WALL_SIGN || a1.getClickedBlock().getType() == signPost) {
             				Sign s = (Sign) a1.getClickedBlock().getState();
             			    Location loc = s.getLocation();
             			    	boolean joined;
